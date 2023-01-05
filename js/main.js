@@ -45,7 +45,10 @@ function startCount(el) {
 // The End Of The Year Date To Countdown To
 // 1000 milliseconds = 1 Second
 
-let countDownDate = new Date("Dec 31, 2022 23:59:59").getTime();
+/* let countDownDate = new Date("Dec 31, 2022 23:59:59").getTime(); */
+let countDownDate = new Date(
+  `Dec 31, ${new Date().getFullYear()} 23:59:59`
+).getTime();
 // console.log(countDownDate);
 
 let counter = setInterval(() => {
